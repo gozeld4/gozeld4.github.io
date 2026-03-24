@@ -288,6 +288,12 @@ html[data-theme="dark"] a {
   }
 }
 
+// ─── Publications abbreviation badge (journal/venue name) ────────────────────
+
+.publications ol.bibliography li .abbr abbr {
+  display: none !important;
+}
+
 // ─── Blockquote accent color ──────────────────────────────────────────────────
 
 blockquote:not(.block-tip):not(.block-warning):not(.block-danger) {
