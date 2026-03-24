@@ -24,12 +24,25 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  background-color: var(--global-footer-bg-color);
+  border-top: none;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
 
   .container {
     text-align: center;
+    color: var(--global-footer-text-color);
+  }
+
+  a {
+    color: var(--global-footer-link-color) !important;
+
+    &:hover {
+      color: var(--global-footer-link-color) !important;
+      opacity: 0.7;
+      text-decoration: none;
+    }
   }
 }
