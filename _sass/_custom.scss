@@ -1,0 +1,357 @@
+/*******************************************************************************
+ * Custom styles: Simple Portfolio theme overrides
+ * Imports last in main.scss so these rules take precedence.
+ ******************************************************************************/
+
+@use "variables" as v;
+
+// ─── Hero Section ────────────────────────────────────────────────────────────
+
+.hero-section {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.hero-title {
+  font-family: "Cormorant Garamond", "Georgia", serif !important;
+  font-size: clamp(2.8rem, 8vw, 5.5rem) !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1 !important;
+  color: var(--global-text-color) !important;
+  margin-bottom: 0.75rem !important;
+
+  span {
+    font-family: "Cormorant Garamond", "Georgia", serif !important;
+    font-weight: 400;
+  }
+}
+
+.hero-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--global-text-color-light);
+  margin-bottom: 3rem;
+}
+
+.hero-scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--global-text-color-light);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  i {
+    font-size: 1rem;
+    animation: bounce-down 2s ease-in-out infinite;
+  }
+}
+
+@keyframes bounce-down {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
+
+// ─── Section Title Dividers ( —— Title —— ) ──────────────────────────────────
+
+.post article h2,
+.section-title-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  color: var(--global-text-color) !important;
+  margin: 4rem 0 2.5rem !important;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--global-text-color);
+    opacity: 0.18;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+
+    &:hover {
+      text-decoration: none !important;
+      opacity: 0.7;
+    }
+  }
+}
+
+// ─── About Section ────────────────────────────────────────────────────────────
+
+// Bio block (the clearfix div that wraps the profile + text)
+.post article .clearfix {
+  background-color: var(--global-section-alt-bg-color);
+  padding: 3.5rem 2.5rem;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+
+.post-header {
+  // hero is full screen, remove default margin
+  margin-bottom: 0;
+}
+
+// Profile image: clean square, no heavy shadow
+.profile {
+  img {
+    border-radius: 4px !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08) !important;
+  }
+}
+
+// ─── Selected projects compact cards ─────────────────────────────────────────
+
+.selected-project-card {
+  max-height: 100px;
+}
+
+.selected-project-img {
+  object-fit: contain;
+  height: 100px !important;
+  min-height: unset !important;
+  padding: 6px;
+  background-color: var(--global-section-alt-bg-color);
+}
+
+.selected-project-card .card-title {
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+}
+
+.selected-project-card .card-text {
+  font-size: 0.8rem !important;
+  color: var(--global-text-color-light) !important;
+}
+
+// ─── Cards (projects, publications) ──────────────────────────────────────────
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: none !important;
+  border-radius: 4px !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09) !important;
+    transform: translateY(-3px);
+  }
+}
+
+html[data-theme="dark"] .card {
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+
+  &:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+// ─── Projects section wrappers ───────────────────────────────────────────────
+
+// Category heading (h2.category) also gets the divider treatment
+h2.category {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  color: var(--global-text-color) !important;
+  margin: 3.5rem 0 2rem !important;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--global-text-color);
+    opacity: 0.18;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+  }
+}
+
+// Grid card rows get a light-grey background band
+.projects .row.row-cols-1.row-cols-md-3,
+.projects .row.row-cols-1.row-cols-md-2 {
+  background-color: var(--global-section-alt-bg-color);
+  padding: 2.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+// Project tags / badges: plain outlined style
+.badge {
+  background-color: transparent !important;
+  color: var(--global-text-color) !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem !important;
+}
+
+html[data-theme="dark"] .badge {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+// ─── Horizontal project cards (Featured Projects) ────────────────────────────
+
+// Horizontal cards: image left, text right with alternating layout
+.projects .row.row-cols-md-2 .col.mb-4 .card.hoverable .row.no-gutters {
+  min-height: 200px;
+}
+
+.projects .row.row-cols-md-2 .col.mb-4:nth-child(even) .card .row.no-gutters {
+  flex-direction: row-reverse;
+}
+
+.projects .row.row-cols-md-2 .card .card-body {
+  padding: 2rem;
+}
+
+// Card images fill their container proportionally
+.card .card-img,
+.card .card-img-top {
+  object-fit: cover;
+  height: 100%;
+  min-height: 180px;
+}
+
+// ─── Links ───────────────────────────────────────────────────────────────────
+
+a,
+table.table a {
+  color: var(--global-text-color);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    color: var(--global-text-color) !important;
+    text-decoration: none !important;
+    border-bottom-color: var(--global-text-color);
+  }
+}
+
+// Links that should NOT have the underline treatment
+nav a,
+.navbar a,
+.social a,
+.contact-icons a,
+.post article h2 a,
+.section-title-divider a,
+.btn,
+.card a,
+.badge,
+.pagination a,
+footer a {
+  border-bottom: none !important;
+}
+
+html[data-theme="dark"] a {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    border-bottom-color: var(--global-text-color);
+  }
+}
+
+// ─── Blockquote accent color ──────────────────────────────────────────────────
+
+blockquote:not(.block-tip):not(.block-warning):not(.block-danger) {
+  border-left-color: var(--global-text-color) !important;
+  opacity: 0.85;
+}
+
+// ─── Social icons ────────────────────────────────────────────────────────────
+
+.social .contact-icons a i {
+  font-size: 2rem;
+}
+
+.social .contact-icons a i::before {
+  color: var(--global-text-color) !important;
+  transition: opacity 0.15s ease;
+}
+
+.social .contact-icons a:hover i::before {
+  opacity: 0.6;
+}
+
+// ─── Footer ──────────────────────────────────────────────────────────────────
+
+footer.sticky-bottom {
+  background-color: var(--global-footer-bg-color);
+  border-top: none !important;
+  padding: 2.5rem 0;
+
+  .container {
+    color: var(--global-footer-text-color);
+  }
+
+  a {
+    color: var(--global-footer-link-color) !important;
+    border-bottom: none !important;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+footer.fixed-bottom {
+  a:hover {
+    color: var(--global-footer-link-color) !important;
+    opacity: 0.7;
+  }
+}
+
+// ─── Page fade-in animation ───────────────────────────────────────────────────
+
+.post article,
+.page-content {
+  animation: fade-in-up 0.5s ease both;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
