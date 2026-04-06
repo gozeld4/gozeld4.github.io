@@ -1,8 +1,8 @@
 ---
 layout: about
-title: This is me
+title: About Me
 permalink: /
-subtitle: MIT AI & Engineering
+subtitle: ML for Science & Engineering
 
 profile:
 
@@ -20,8 +20,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a machine learning engineer with an interdisciplinary background in AI and Chemical Engineering, focused on building innovative solutions to complex scientific and engineering problems. My experience in both research and industry has shaped a strong problem-solving mindset and a multidisciplinary approach to developing practical, real-world ML systems.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, I am developing an agent-based machine learning model for organic synthesis prediction using PyTorch and Graph Neural Networks to accelerate drug discovery. I enjoy designing and building impactful ML-driven technologies and aim to continue working at the intersection of AI and scientific innovation.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Outside of work, I enjoy baking and traveling, and I appreciate opportunities to explore new cultures, ideas, and experiences.
