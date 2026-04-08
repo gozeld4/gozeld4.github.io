@@ -418,7 +418,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-predicting-antibiotic-compound-synergy-against-mdr-bacteria-using-machine-learning",
           title: 'Predicting Antibiotic-Compound Synergy Against MDR Bacteria Using Machine Learning',
-          description: "ML framework to predict drug-compound synergy against multidrug-resistant bacteria, accelerating antibiotic discovery.",
+          description: "LightGBM + ChemBERTa classifier trained on 1.3M drug combinations to predict antibiotic synergy against multidrug-resistant bacteria, achieving 80% accuracy and AUROC of 0.88.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/antibiotic_synergy/";
             },},{id: "projects-sensor-based-assessment-of-co-and-particulate-matter-exposure-in-indoor-tunnel-environments",
@@ -426,14 +426,14 @@ ninja.data = [{
           description: "Portable sensor deployment to characterize occupational CO and PM exposure levels in underground transit tunnel environments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/co_pm_exposure/";
-            },},{id: "projects-copper-doped-natural-zeolites-as-novel-materials-for-methane-mitigation-patent-pending",
-          title: 'Copper-Doped Natural Zeolites as Novel Materials for Methane Mitigation (Patent Pending)',
-          description: "Synthesis and catalytic evaluation of copper-exchanged natural zeolites for low-concentration methane oxidation in ventilation air.",
+            },},{id: "projects-copper-doped-natural-zeolites-for-low-cost-methane-mitigation-patent-acquired",
+          title: 'Copper-Doped Natural Zeolites for Low-Cost Methane Mitigation (Patent Acquired)',
+          description: "Cu-exchanged natural clinoptilolite catalysts achieving complete methane conversion at 500°C at a fraction of the cost of synthetic zeolite benchmarks.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/copper_zeolites/";
-            },},{id: "projects-scalable-crispr-cas9-lipid-nanoparticle-delivery-for-fop-gene-therapy",
-          title: 'Scalable CRISPR-Cas9 Lipid Nanoparticle Delivery for FOP Gene Therapy',
-          description: "Design and evaluation of lipid nanoparticle formulations for systemic CRISPR-Cas9 delivery to correct the ACVR1 mutation causing FOP.",
+            },},{id: "projects-crispr-cas9-lnp-delivery-for-fop-gene-therapy",
+          title: 'CRISPR-Cas9 LNP Delivery for FOP Gene Therapy',
+          description: "Muscle-targeted lipid nanoparticle system for CRISPR-Cas9 RNP delivery to correct the ACVR1 R206H mutation causing Fibrodysplasia Ossificans Progressiva.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/crispr_fop/";
             },},{id: "projects-immigrate-a-choice-based-interactive-narrative-system",
@@ -441,14 +441,14 @@ ninja.data = [{
           description: "A choice-based interactive narrative game that simulates the immigration experience through branching, consequence-driven storytelling.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/immigrate/";
-            },},{id: "projects-end-to-end-ml-platform-for-materials-property-prediction-and-discovery",
-          title: 'End-to-End ML Platform for Materials Property Prediction and Discovery',
-          description: "A scalable ML platform integrating data ingestion, featurization, model training, and deployment for accelerated materials informatics.",
+            },},{id: "projects-accelerating-material-discovery-with-machine-learning-lila-sciences",
+          title: 'Accelerating Material Discovery with Machine Learning @ Lila Sciences',
+          description: "End-to-end ML pipeline for large-scale material screening — from messy experimental data to deployed MCP tools — achieving a 50% improvement over baseline LLM models.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ml_platform/";
-            },},{id: "projects-machine-learning-for-small-molecule-solubility-prediction-in-drug-discovery",
-          title: 'Machine Learning for Small Molecule Solubility Prediction in Drug Discovery',
-          description: "Benchmarking and developing ML models to predict aqueous solubility of drug candidates from molecular structure.",
+            },},{id: "projects-solvanet-predicting-solvation-free-energies-with-machine-learning",
+          title: 'SolvaNET: Predicting Solvation Free Energies with Machine Learning',
+          description: "Gradient boosting model combining Morgan fingerprints and RDKit descriptors to predict logK for solute-solvent pairs, achieving R² = 0.973 on cross-validation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ml_solubility/";
             },},{id: "projects-synthesis-and-characterization-of-mof-carbon-nitride-composites-for-photochemical-co-reduction-to-fuels",
@@ -463,7 +463,7 @@ ninja.data = [{
               window.location.href = "/projects/mof_instability/";
             },},{id: "projects-resistivity-based-pfas-detection-via-fluorous-polyaniline-lateral-flow-sensor",
           title: 'Resistivity-Based PFAS Detection via Fluorous Polyaniline Lateral Flow Sensor',
-          description: "Novel electrochemical lateral flow sensor using fluorinated polyaniline for selective, low-cost PFAS detection in water.",
+          description: "F-PANI sensor on nitrocellulose membranes for field-deployable PFAS detection, with transport modeling reducing assay time to ~13.6 minutes.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pfas_detection/";
             },},{id: "projects-formulation-dependent-structural-and-swelling-characterization-of-polyacrylamide-hydrogels",
@@ -471,19 +471,19 @@ ninja.data = [{
           description: "Systematic study of how monomer and crosslinker concentration governs polyacrylamide hydrogel network structure and equilibrium swelling.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/polyacrylamide_hydrogels/";
-            },},{id: "projects-data-driven-reagent-recommendation-for-organic-synthesis-and-drug-discovery",
-          title: 'Data-Driven Reagent Recommendation for Organic Synthesis and Drug Discovery',
-          description: "ML pipeline for recommending optimal reagents and reaction conditions to accelerate retrosynthetic planning and drug synthesis.",
+            },},{id: "projects-reaction-aware-agent-prediction-via-local-neural-models",
+          title: 'Reaction-Aware Agent Prediction via Local Neural Models',
+          description: "Reaction class-specific D-MPNN and FFN models trained on 15M patent reactions for chemical agent prediction, achieving ~20% improvement over global baselines.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/reagent_recommendation/";
             },},{id: "projects-optimizing-solar-panel-waste-recycling-facility-placement-in-massachusetts",
           title: 'Optimizing Solar Panel Waste Recycling Facility Placement in Massachusetts',
-          description: "Geospatial optimization model to site solar panel recycling facilities across Massachusetts for minimal cost and maximal coverage.",
+          description: "Geospatial optimization model using p-median and coverage formulations to site solar panel recycling facilities across Massachusetts for minimal transport cost and equitable access.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/solar_recycling/";
             },},{id: "projects-topological-feature-driven-machine-learning-for-mechanically-stable-mof-discovery",
           title: 'Topological Feature-Driven Machine Learning for Mechanically Stable MOF Discovery',
-          description: "Using persistent homology descriptors and ML to predict mechanical stability of metal-organic frameworks from topology alone.",
+          description: "ML framework predicting MOF bulk modulus from topology, chemistry, and geometry features — screening ~435k candidates with 75% MD-validated accuracy.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/topological_ml_mof/";
             },},{id: "projects-travelai-an-intelligent-personal-travel-planning-agent",
