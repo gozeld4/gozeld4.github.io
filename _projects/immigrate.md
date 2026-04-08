@@ -7,6 +7,7 @@ importance: 1
 category: fun
 year: 2025
 pdf: cms_class.pdf
+skills: [Interactive Narrative, Game Design, Storytelling, Creative Technology, Systems Design]
 ---
 
 Developed as a project for MIT's Comparative Media Studies program, Immigrate is a choice-based narrative game designed to place players inside the lived experience of immigration — navigating bureaucratic systems, cultural displacement, linguistic barriers, and moments of unexpected connection. The project explores how interactive media can build empathy in ways that static storytelling cannot, by making the player an active participant in decisions that carry real narrative weight.

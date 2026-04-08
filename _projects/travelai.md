@@ -3,9 +3,10 @@ layout: page
 title: "TravelAI: An Intelligent Personal Travel Planning Agent"
 description: "Conversational AI agent that builds personalized, multi-day travel itineraries by combining preference modeling with real-time data."
 img:
-importance: 6
-category: ml & ai
+importance: 2
+category: fun
 year: 2025
+skills: [Python, LLM APIs, AI Agents, Machine Learning, Conversational AI, System Design]
 ---
 
 Planning a trip involves balancing dozens of competing constraints — budget, timing, travel style, interest categories, logistics — a task where large language models and agentic AI systems can add substantial value. TravelAI is a conversational planning agent that constructs personalized, day-by-day itineraries through natural dialogue, adapting recommendations dynamically based on user feedback.

@@ -1,0 +1,8 @@
+{% assign skills = include.skills %}
+{% if skills and skills.size > 0 %}
+  <div class="skill-tags">
+    {% for skill in skills %}
+      <span class="skill-tag">{{ skill }}</span>
+    {% endfor %}
+  </div>
+{% endif %}
