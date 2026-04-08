@@ -7,6 +7,7 @@ importance: 8
 category: science
 year: 2023
 pdf: smith_lab.pdf
+skills: [Materials Science, Chemical Synthesis, Materials Characterization, Membrane Science, MOFs, Polymer Science]
 ---
 
 Conducted in the Smith Lab, this project investigates a critical but underexplored failure mode in MOF-based mixed matrix membranes (MMMs): the coupled effects of framework instability and polymer chain infiltration into MOF pores during membrane fabrication. While MMMs incorporating amine-functionalized UiO-66 into PIM-COOH matrices promise to exceed the Robeson upper bound for gas separation, practical performance consistently falls short of theoretical predictions.

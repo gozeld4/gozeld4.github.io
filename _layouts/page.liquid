@@ -16,6 +16,9 @@ layout: default
 
   <article>
     {{ content }}
+    {% if page.skills %}
+      {% include skill_tags.liquid skills=page.skills %}
+    {% endif %}
   </article>
 
   {% if page.related_publications %}

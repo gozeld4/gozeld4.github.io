@@ -7,6 +7,7 @@ importance: 4
 category: science
 year: 2024
 pdf: Imperial_Research.pdf
+skills: [Materials Science, Photocatalysis, Chemical Synthesis, CO₂ Reduction, Materials Characterization, MOFs]
 ---
 
 Conducted as part of a research placement at Imperial College London, this project investigates MOF-carbon nitride (C₃N₄) composite photocatalysts for solar-driven CO₂ reduction to carbon-neutral fuels. The work addresses a fundamental challenge in artificial photosynthesis: no single material simultaneously optimizes light absorption, charge separation, CO₂ adsorption, and catalytic turnover. Combining porous MOF scaffolds with the visible-light-active semiconductor C₃N₄ targets each of these requirements through material synergy.

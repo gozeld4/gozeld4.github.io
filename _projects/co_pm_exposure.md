@@ -7,6 +7,7 @@ importance: 6
 category: science
 year: 2024
 pdf: atmospheric_chem_project.pdf
+skills: [Data Analysis, Environmental Monitoring, Sensor Systems, Environmental Chemistry, Air Quality]
 ---
 
 Workers and commuters in underground transit tunnels face elevated exposure to carbon monoxide (CO) and fine particulate matter (PM₂.₅) from diesel emissions, brake dust, and resuspended material. Despite known health risks, direct, high-resolution measurements in these environments remain sparse. This project deploys a network of portable low-cost sensors to characterize spatiotemporal CO and PM concentration profiles inside active tunnel environments.
