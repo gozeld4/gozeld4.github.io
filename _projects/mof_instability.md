@@ -16,4 +16,6 @@ Structural characterization via PXRD, N₂ physisorption, and TGA reveals signif
 
 These findings establish the importance of framework stability screening and surface passivation (e.g., ligand capping, pre-treatment protocols) as prerequisite steps in MMM design, and inform more rigorous fabrication procedures for achieving predicted separation performance in next-generation membranes.
 
-{% include pdf_embed.liquid %}
+<div class="project-meta-badges" style="margin-top: 2rem;">
+  <a class="project-badge project-badge-link" href="https://pubs.acs.org/doi/full/10.1021/acs.iecr.5c00174" target="_blank"><i class="fa-solid fa-book-open"></i> Ind. Eng. Chem. Res. (ACS)</a>
+</div>
