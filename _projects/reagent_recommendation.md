@@ -50,4 +50,3 @@ skills: [Python, PyTorch, Graph Neural Networks, Chemprop, RDKit, Multi-label Cl
 
 </div>
 
-{% include pdf_embed.liquid %}
